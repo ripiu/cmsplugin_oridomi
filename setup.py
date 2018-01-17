@@ -1,6 +1,6 @@
 from setuptools import setup
 
-from ripiu.cmsplugin_rototalc import __version__
+from ripiu.cmsplugin_oridomi import __version__
 
 setup(
     name='ripiu.cmsplugin_oridomi',
