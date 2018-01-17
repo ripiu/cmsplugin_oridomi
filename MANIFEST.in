@@ -1,0 +1,8 @@
+include AUTHORS
+include LICENSE
+include README.rst
+include HISTORY
+recursive-include ripiu/cmsplugin_oridomi/migrations *
+recursive-include ripiu/cmsplugin_oridomi/templates *
+recursive-include ripiu/cmsplugin_oridomi/static *
+recursive-include ripiu/cmsplugin_oridomi/locale *

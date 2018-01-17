@@ -1,0 +1,16 @@
+{% load cms_tags staticfiles sekizai_tags %}
+{% if instance.child_plugin_instances %}
+  {% addtoblock "css" %}<link rel="stylesheet" href="{% static "ripiu/cmsplugin_oridomi/css/oridomi.css" %}"?v={{ version }}>{% endaddtoblock %}
+  {% addtoblock "js" %}<script src="https://cdn.jsdelivr.net/npm/oridomi@1.1.2/oridomi.min.js"></script>{% endaddtoblock %}
+  {% addtoblock "js" %}
+<script>
+  var folded = new OriDomi('#oridomi-container-{{ instance.pk }}', {{ conf }});
+  folded.accordion(30, 'top');
+</script>
+  {% endaddtoblock %}
+  <div id="oridomi-container-{{ instance.pk }}" class="ripiu oridomi">
+    {% for plugin in instance.child_plugin_instances %}
+      {% render_plugin plugin %}
+    {% endfor %}
+  </div>
+{% endif %}
