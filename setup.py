@@ -8,7 +8,7 @@ setup(
     url='https://github.com/ripiu/ripiu.cmsplugin_oridomi',
     license='BSD-new',
     description='django cms oridomi integration',
-    long_description=open('README.rst').read(),
+    long_description=open('readme.rst').read(),
     author='matteo vezzola',
     author_email='matteo@studioripiu.it',
     # find_packages doesn't like implicit namespace packages:
