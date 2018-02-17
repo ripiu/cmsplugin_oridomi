@@ -5,7 +5,7 @@ from ripiu.cmsplugin_oridomi import __version__
 setup(
     name='ripiu.cmsplugin_oridomi',
     version=__version__,
-    url='https://github.com/ripiu/ripiu.cmsplugin_oridomi',
+    url='https://github.com/ripiu/cmsplugin_oridomi',
     license='BSD-new',
     description='django cms oridomi integration',
     long_description=open('readme.rst').read(),
